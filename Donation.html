@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="../Css/Styless.css"> 
+</head>
+
+<body>
+    <header class="top-header">
+        <nav class="welcome-banner">
+            <a href="index.html">Home</a>
+            <a href="Destinations.html">Destinations</a>
+            <a href="PetLaws.html">Pet Laws</a>
+            <a href="TravelTips.html">Travel Tips</a>
+            <a href="Donation.html">Donation</a>
+            <div id="welcome-text">
+                <h2>Give a Paw, Change a Life!</h2>
+                <p>Your support can bring wagging tails and warm hearts to dogs in need. Donate today and make a difference!</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+     <section id="why-donate" class="donate-section">
+        <h2>Why Donate?</h2>
+        <p>Your donation helps provide a better life for pets in need. With your support, we can ensure the safety, well-being, and happiness of animals while promoting responsible pet ownership. Every contribution, big or small, makes a meaningful impact on the lives of dogs and their owners.</p>
+    </section>
+    <div class="form-container">
+        <form action="send_email.php" method="post">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-group">
+                    <label for="username">User Name:</label>
+                    <input id="username" type="text" name="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" name="password" placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <label for="repassword">Re-enter Password:</label>
+                    <input id="repassword" type="password" name="repassword" placeholder="Re-enter your password">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Details</legend>
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input id="fname" type="text" name="fname" placeholder="Enter your first name">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Surname:</label>
+                    <input id="lname" type="text" name="lname" placeholder="Enter your surname">
+                </div>
+                <div class="form-group">
+                    <label for="eaddress">Email Address:</label>
+                    <input id="eaddress" type="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="text" name="phone" placeholder="Enter your phone number">
+                </div>
+            </fieldset>
+
+            <!-- Billing Address Section -->
+            <fieldset>
+                <legend>Billing Address</legend>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input id="address" type="text" name="address" placeholder="Enter your billing address">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Donation Amount</legend>
+                <div class="form-group">
+                    <label for="donation">Select Donation Amount:</label>
+                    <select id="donation" name="donation">
+                        <option value="50">&euro;10</option>
+                        <option value="100">&euro;20</option>
+                        <option value="200">&euro;50</option>
+                        <option value="500">&euro;100</option>
+                        <option value="1000">&euro;200</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Billing Frequency:</label>
+                    <div class="checkbox-group">
+                        <input id="once-off" type="checkbox" name="billing" value="once-off">
+                        <label for="once-off">Once-off Payment</label>
+                        <input id="monthly" type="checkbox" name="billing" value="monthly">
+                        <label for="monthly">Monthly Donation</label>
+                        <input id="quarterly" type="checkbox" name="billing" value="quarterly">
+                        <label for="quarterly">Every 3 Months</label>
+                        <input id="yearly" type="checkbox" name="billing" value="yearly">
+                        <label for="yearly">Every 12 Months</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Card Information</legend>
+                <div class="form-group">
+                    <label>Card Type:</label>
+                    <input id="CardV" name="Cardtype" value="v" type="radio">
+                    <label for="CardV">Visa</label><br>
+                    <input id="CardM" name="Cardtype" value="m" type="radio">
+                    <label for="CardM">MasterCard</label><br>
+                    <input id="CardP" name="Cardtype" value="p" type="radio">
+                    <label for="CardP">PayPal</label>
+                </div>
+                <div class="form-group">
+                    <label for="cardholder">Card Holder Name:</label>
+                    <input id="cardholder" type="text" name="cardholder" placeholder="Enter the card holder's name">
+                </div>
+                <div class="form-group">
+                    <label for="cardnum">Card Number:</label>
+                    <input id="cardnum" type="text" name="cardnum" placeholder="Enter your card number">
+                </div>
+                <div class="form-group">
+                    <label for="expiry">Expiry Date:</label>
+                    <input id="expiry" type="text" name="expiry" placeholder="MM/YY">
+                </div>
+                <div class="form-group">
+                    <label for="ccv">CCV:</label>
+                    <input id="ccv" type="text" name="ccv" placeholder="Enter the CCV">
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Feedback</legend>
+                <div class="form-group">
+                    <label for="message">Tell us how we can do better!</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter any feedback about our website"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Donation</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </div> 
+
+   
+    <section class="dog-charities">
+        <h2>Dog Charities & Foundations in Ireland</h2>
+        <p>Discover Irish charities that are dedicated to the welfare of dogs in need.</p>
+        <ul class="charity-list">
+            <li class="charity-item">
+                <h3>Dogs Trust Ireland</h3>
+                <p>The largest dog welfare charity in Ireland, working to reduce dog homelessness and provide lifelong care for dogs.</p>
+                <ul>
+                    <li><a href="https://www.dogstrust.ie">Visit Website</a></li>
+                    <li>Focus: Dog rescue, rehoming, education</li>
+                    <li>Founded: 2005</li>
+                </ul>
+            </li>
+            <li class="charity-item">
+                <h3>Irish Water Spaniel Rescue</h3>
+                <p>A breed-specific rescue group dedicated to the preservation and care of the Irish Water Spaniel breed.</p>
+                <ul>
+                    <li><a href="http://www.irishwaterspanielrescue.ie">Visit Website</a></li>
+                    <li>Focus: Rescue and rehoming of Irish Water Spaniels</li>
+                    <li>Founded: 2007</li>
+                </ul>
+            </li>
+            <li class="charity-item">
+                <h3>Limerick Animal Welfare</h3>
+                <p>A rescue organization that focuses on rescuing abandoned and unwanted dogs in Limerick and surrounding areas.</p>
+                <ul>
+                    <li><a href="http://www.limerickanimalwelfare.com">Visit Website</a></li>
+                    <li>Focus: Rescue, rehabilitation, and adoption</li>
+                    <li>Founded: 1989</li>
+                </ul>
+            </li>
+            <li class="charity-item">
+                <h3>The DSPCA (Dublin Society for Prevention of Cruelty to Animals)</h3>
+                <p>The DSPCA has been working for the welfare of animals in Ireland since 1840, focusing on rescue, adoption, and cruelty prevention.</p>
+                <ul>
+                    <li><a href="https://www.dspca.ie">Visit Website</a></li>
+                    <li>Focus: Rescue, rehabilitation, animal cruelty prevention</li>
+                    <li>Founded: 1840</li>
+                </ul>
+            </li>
+            <li class="charity-item">
+                <h3>Animal Heaven Animal Rescue</h3>
+                <p>This small rescue charity focuses on rescuing dogs from high-kill shelters and providing them with loving homes.</p>
+                <ul>
+                    <li><a href="https://www.animalheaven.ie">Visit Website</a></li>
+                    <li>Focus: Dog rescue, rehabilitation, and adoption</li>
+                    <li>Founded: 2005</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-column1">
+            <h3>Sitemap</h3>
+            <hr>
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="Destinations.html"> Destinations </a></li>
+                <li><a href="PetLaws.html"> Pet Laws </a></li>
+                <li><a href="TravelTips.html"> Travel Tips</a></li>
+                <li><a href="Donation.html"> Donation</a></li>
+            </ul>
+        </div>
+        <div class="footer-column2">
+            <h3>Contact Details</h3>
+            <hr>
+            <p>Phone 093 2342134</p>
+            <p>Email: <a href="mailto:pet@ireland.ie">pet@ireland.ie</a></p>
+        </div>
+        
+        <div class="footer-column3">
+            <h3>Address</h3>
+            <hr>
+            <p><span id="website-name">Paws & Trails</span><br>
+                123 Dog Street, <br>
+                Cork City,<br>
+                County Cork, <br>
+                Ireland</p>
+        </div>
+        <div id="back-to-top">
+            <a href="#top"> Back to Top</a>
+        </div>
+        <div id="clear-footer"></div>
+        <div id ="copy-right">
+            <p>&copy; 2024 Paws & Trails. All Rights Reserved.</p>
+        </div>
+    <!-- Need to add hosting link to fotter for everypage -->
+    </footer>
+    
+
+
+</body>
+
+</html>
+
